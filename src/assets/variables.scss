@@ -1,0 +1,28 @@
+  
+$infinera-color: #6c00ad;
+$green-color: #4CAF50;
+$blue-color: #2196F3;
+$red-color: #F44336;
+$orange-color: #FF9800;
+$primary-color: #3F51B5;
+$logo-color: #ff4b01;
+
+// Color Variables
+.blue-color{color: $blue-color;}
+.green-color{color: $green-color;}
+.red-color{color: $red-color;}
+.orange-color{color: $orange-color;}
+.logo-color{color: $logo-color;}
+.infi-color{color: $infinera-color;}
+
+// Background Color Variables  
+
+.bg-blue-color {background-color: $blue-color;}
+.bg-primary-color {background-color: $primary-color;}
+.bg-logo-color {background-color: $logo-color;}
+.bg-orange-color {background-color: $orange-color;}
+
+
+// Border Color Variables  
+.border-blue-color{border: 2px solid $blue-color;}
+
