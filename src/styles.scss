@@ -5,11 +5,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: segoe ui, "Helvetica Neue", sans-serif; }
 .bg{
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)),url("/assets/image-background.jpg");
+    background: linear-gradient(rgba(232, 241, 95, 0.753), rgba(232, 241, 95, 0.753)),url("/assets/image-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color: #fff;
+    color: rgb(47, 123, 158);
     height: 100%;
     // overflow: hidden;
     overflow-x:hidden; 

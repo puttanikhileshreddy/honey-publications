@@ -1,0 +1,72 @@
+.gdl-ban-ma{
+    height: 40%;
+    background: rgb(255, 255, 255);
+    width: 60%;
+}
+.gdl-ban-ma1{
+    height: 40%;
+    background: rgb(255, 255, 255);
+    width: 30%;
+    height: 20em;
+}
+
+.gdl-ban{
+background: rgb(95, 118, 221);
+height: 3em;
+width: 100%;
+}
+ul#menu li {
+    // display:inline;
+    display: flex;
+    position:relative;
+    left:10%;
+    float:left;
+    list-style:none;
+    padding: 25px;
+    justify-content: center;
+  }
+  @media  only screen and (max-width: 600px){
+    ul#menu li {
+        // display:inline;
+        display: flex;
+        position:relative;
+        left: -2%;
+        float:left;
+        list-style:none;
+        padding: 2px;
+        justify-content: center;
+      }
+  }
+.list-side-menu{
+    list-style: none;
+    margin-left: -15px;
+}
+
+.row-bg-overlay{
+    margin-top: 5%;
+    background: linear-gradient(rgba(245, 242, 242, 0.61), rgba(0,0,0,.6)),url("/assets/guidel-top-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 16em;
+    // overflow: hidden;
+    overflow-x:hidden; 
+}
+// .row-bg-overlay {
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     content: ' ';
+//     z-index: 2;
+//     backface-visibility: hidden;
+// }
+.centered {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
