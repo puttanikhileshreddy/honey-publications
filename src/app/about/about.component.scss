@@ -1,24 +1,16 @@
-.bg{
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.4)),url("/assets/image-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    height: 100%;
-    // overflow: hidden;
-    overflow-x:hidden; 
-}
-
-::-webkit-scrollbar{
-    width: 0px;
-    background: transparent;
-}
-.bg-color{
-    background-color: rgba(245, 245, 245, 0.466);
-}
+// .bg-color{
+//     background-color: rgba(245, 245, 245, 0.501);
+// }
 
 .ml-color{
     border-left-width: 3px;
     border-left-style: solid;
     border-left-color: orange;
+}
+.text-color{
+    color : rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+.bg-moto{
+    background-color: rgba(253, 253, 253, 0.878);
 }

@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { GuidelinesComponent } from './guidelines/guidelines.component';
 import { GuideStyleComponent } from './guidelines/guide-style/guide-style.component';
 import { JournalsComponent } from './journals/journals.component';
+import { DialogOverviewExampleDialog } from './journals/journals.component';
 import { JourStyleComponent } from './journals/jour-style/jour-style.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AuthorComponent } from './guidelines/author/author.component';
@@ -21,6 +22,11 @@ import { MedicineComponent } from './journals/medicine/medicine.component';
 import { NatHisComponent } from './journals/nat-his/nat-his.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { GuidelinesStyle1Component } from './guidelines/guidelines-style1/guidelines-style1.component';
+import { JourStyle1Component } from './journals/jour-style1/jour-style1.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -39,14 +45,21 @@ import {MatButtonModule} from '@angular/material/button';
     EnginComponent,
     PoetryComponent,
     MedicineComponent,
-    NatHisComponent
+    NatHisComponent,
+    GuidelinesStyle1Component,
+    JourStyle1Component,
+    DialogOverviewExampleDialog 
   ],
+  entryComponents: [DialogOverviewExampleDialog],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

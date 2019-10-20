@@ -26,6 +26,7 @@ const routes: Routes = [
   {path: 'editor',component: EditorComponent },
   {path: 'privacy-polocy',component: PrivacyPolocyComponent },
   {path: 'reviwer',component: ReviwerComponent },
+  {path: 'journals',component: JournalsComponent },
   {path: 'jrn-engineering',component: EnginComponent },
   {path: 'jrn-medicine',component: MedicineComponent },
   {path: 'jrn-naturalHistory',component: NatHisComponent },

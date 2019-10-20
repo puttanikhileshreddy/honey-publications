@@ -1,42 +1,35 @@
-<div class="container-fluid p-0">
-  <div class=" mat-elevation-z8 row m-0 p-1">
-    <div class="col-md-auto col-sm-12 text-sm-center row">
-      <img src="/assets/logo.png" alt="logo" width="45px" class="float-md-left mr-2 ml-auto"
-        style="padding: 2px;background-color: white;border-radius: 50px;" />
-      <h3 class="text-dark-light mb-0 float-md-left mr-auto h-cr" routerLink="/about" style="line-height: 45px;">Honey
-        Publications</h3>
-    </div>
-    <div class="col p-0">
-      <div class="row m-0">
-        <nav class="mx-auto" style="display: inline-block;">
-          <ul>
-            <li><a href="#">Guidelines</a>
-              <ul style="width: 100px;">
-                <li><a routerLink="/author">Author's</a></li>
-                <li><a routerLink="/editor">Editors</a></li>
-                <li><a routerLink="/reviwer">Reviewers</a></li>
-                <li><a routerLink="/privacy-polocy">Privacy Polocy</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Journals</a>
-              <ul>
-                <li><a routerLink="/jrn-engineering">Engineering</a></li>
-                <li><a routerLink="/jrn-poetry">Poetry</a></li>
-                <li><a routerLink="/jrn-medicine">Medicine</a></li>
-                <li><a routerLink="/jrn-naturalHistory">Natural History</a></li>
-              </ul>
-            </li>
-            <li><a routerLink="/contactUs">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="col-md-auto p-0 m-0 row align-items-center" style="line-height: 45px;">
-      <a [routerLink]="[ '/dashboard' ]" class="ml-auto"><i
-          class="fas fa-th-large text-dark-light mr-4 fa-15x ml-auto"></i></a>
-      <a [routerLink]="[ '/notifications' ]"><i class="fas fa-bell text-dark-light mr-4 fa-15x"></i></a>
-      <i class="fas fa-cog text-dark-light mr-4 fa-15x"></i>
-      <a (click)="out()"><i class="fas fa-sign-out-alt text-dark-light mr-4 fa-15x"></i></a>
-    </div>
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light ">
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <h2 class="text-dark-light mb-0 float-md-left mr-auto h-cr" routerLink="/about"
+    style="line-height: 45px;color:rgba(2, 4, 119, 0.897);">Honey
+    Publications</h2>
+  <div>
+    <ul>
+     <li>
+      <a mat-button [matMenuTriggerFor]="animals">Guidelines</a>
+
+      <mat-menu #animals="matMenu">
+        <button mat-menu-item routerLink="/author" [matMenuTriggerFor]="author">Author's</button>
+        <button mat-menu-item routerLink="/editor">Editors</button>
+        <button mat-menu-item routerLink="/reviwer">Reviewers</button>
+        <button mat-menu-item routerLink="/privacy-polocy">Privacy Polocy</button>
+      </mat-menu>
+
+      <mat-menu #author="matMenu">
+        <button mat-menu-item >For authors</button>
+        <button mat-menu-item >Manuscript Guidelines</button>
+        <button mat-menu-item >Peer review process</button>
+        <button mat-menu-item>Processing fees</button>
+      </mat-menu>
+
+   
+     </li>
+      <li><a  mat-button  routerLink="/journals">Journals</a>
+      </li>
+      <li><a  mat-button  routerLink="/contactUs">Contact Us</a></li>
+    </ul>
   </div>
-</div>
+</nav>

@@ -1,7 +1,7 @@
 // @import '~src/assets/variables.scss';
 nav ul {
 	padding: 0;
-  margin: 0;
+	margin: 0;
 	list-style: none;
 	position: relative;
 	}
@@ -15,7 +15,7 @@ nav ul li {
 nav a {
 	display:block;
 	padding:0 10px;	
-	color:rgba(250, 250, 250, 0.933);
+	color:rgb(0, 0, 0);
 	font-size: 1rem;
 	line-height: 40px;
 	text-decoration:none;
@@ -29,7 +29,7 @@ nav a:hover {
 nav ul ul {
 	display: none;
 	position: absolute; 
-	background-color: #86a9cc;
+	background-color: #46daeee5;
 	top: 45px; /* the height of the main nav */
 }
 	
@@ -50,6 +50,9 @@ nav ul ul li {
 nav ul ul li a{
 	font-size: 0.9rem !important;
 	line-height: 30px;
+}
+nav ul li ul li ul {
+	// margin-left: 0 ;
 }
 
 /* Second, Third and more Tiers	*/
@@ -74,4 +77,8 @@ li > a:only-child:after { content: ''; }
 .h-cr{
 	cursor: pointer;
 	outline : none;
+}
+.bgnav{
+	background: rgb(8, 7, 7);
+	color: red;
 }

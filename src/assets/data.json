@@ -1,0 +1,81 @@
+{
+    "Journalsdata": {
+        "engineering": {
+            "about": [
+                "Honey Publications welcome the students, professors, scholars with any engineering background to submit your articles or books. Any submission regarding Computer Science, Mechanical, Electrical, Electronic, Civil engineering will be accepted in our journal. JOE aims for high quality and quick publications. The motto of our journal is to provide the future generations in engineering background to gain vast knowledge in their desired field. This journal accepts various manuscripts like research, review, mini review, case reports, short communications, opinions, perceptions and so on."
+            ],
+            "classification": {
+                "1": "Programming languages",
+                "2": " Robotics",
+                "3": " Artificial intelligence",
+                "4": " Database management",
+                "5": "Network and security",
+                "6": "Electronic devices and circuits",
+                "7": "Analog communications",
+                "8": " Embedded systems",
+                "9": "Antennas and wave propagation",
+                "10": "Microprocessors and microcontrollers",
+                "11": " Electrical circuits",
+                "12": " Switch gear protection",
+                "13": "Digital signal processing",
+                "14": "Machines",
+                "15": "Thermodynamics",
+                "16": "Construction",
+                "17": "Land development",
+                "18": "Surveying",
+                "19": " Hydraulic engineering",
+                "20": " Fire protection"
+            }
+        },
+        "poetry": {
+            "about": [
+                "Honey Publications welcome fictional/non-fictional stories, poetries and novels. Novels can also be published in any number of series. Along with English, we accept Telugu and Hindi articles, books and researches on these three languages and their grammar will be accepted."
+            ],
+            "classification": {
+                "1": "Poetries",
+                "2": "Novels",
+                "3": "Stories ",
+                "4": "Language studies"
+            }
+        },
+        "NatHis": {
+            "about": [
+                "Modern generation have changed the days and lives from being explored to nature to prisoning ourselves in enclosed rooms. Olden day’s people comparatively lead peaceful life than the modern generation as there was nature involved in their daily routine. Though days have changed, there are lot of people still loving nature. Many naturalists perform research on nature and many readers show interest in natural history.Honey Publications team take a pride to publish articles and books on natural history. We welcome the naturalists to share the beauty of nature with the world by our means."
+            ],
+            "classification": {
+                "1": "Geobiology",
+                "2": "Aerology",
+                "3": "Astronomy",
+                "4": "Geology",
+                "5": "Hydrology",
+                "6": "Volcanology",
+                "7": "Montology",
+                "8": "Botany",
+                "9": "Zoology",
+                "10": "Ayurveda"
+            }
+        },
+        "medicine": {
+            "about": [
+                "Journal of Medical Science is an open access journal which is inhabited with all the medical specializations in order to create a common platform for medical science topics to make it easy for all the medical knowledge seekers and to create impact about medical researches. This is peer reviewed by our scholarly Editorial Board members. JOMS welcomes all the articles/books related to any medical specialization."
+            ],
+            "classification": {
+                "1": "Gynaecology",
+                "2": "Rehabilitation",
+                "3": "Cardiology",
+                "4": "Orthopedics",
+                "5": "Dermatology",
+                "6": "Nephrology",
+                "7": "Medical Genetics",
+                "8": "Neurology",
+                "9": "Pathology",
+                "10": "Pediatrics",
+                "11": "Psychiatry",
+                "12": "Surgery",
+                "13": "Urology",
+                "14": "Physical Medicine and Rehabilitation",
+                "15": "Pulmonology"
+            }
+        }
+    }
+}

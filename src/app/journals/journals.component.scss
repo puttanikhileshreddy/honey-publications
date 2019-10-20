@@ -1,0 +1,29 @@
+
+.example-card {
+  overflow: auto;
+    max-width: 350px;
+  }
+.bg-dark-t{
+  background-color: rgba(228, 92, 221, 0.651);
+}
+  
+  .example-header-image {
+    background-image: url("/assets/engineering.jpg");
+    background-size: cover;
+  }
+  .example-header-image-poetry {
+    background-image: url("/assets/poetry.jpg");
+    background-size: cover;
+  }
+  .example-header-image-nature {
+    background-image: url("/assets/nature.jpg");
+    background-size: cover;
+  }
+ 
+  .example-header-image-medicine {
+    background-image: url("/assets/medicine.jpg");
+    background-size: cover;
+  }
+  mat-card{
+    margin: 25px 25px 25px 25px;
+  }

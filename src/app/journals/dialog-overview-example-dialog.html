@@ -1,0 +1,38 @@
+<div class="col-md-12" [ngSwitch]="data.topic">
+        <div *ngSwitchCase="1">
+                <P>{{data.name.engineering.about}}</P>
+                <ol style="overflow: scroll;  list-style-type: number">
+                        <li *ngFor="let clas of data.name.engineering.classification">
+                                {{clas}}
+                                <span>{{clas}}</span> {{clas[key]}}
+                        </li>
+                </ol>
+        </div>
+        <div *ngSwitchCase="2">
+                <P>{{data.name.poetry.about}}</P>
+                <ol>
+                        <li *ngFor="let clas of data.name.poetry.classification">
+                                {{clas}}
+                                <span>{{clas}}</span> {{clas[key]}}
+                        </li>
+                </ol>
+        </div>
+        <div *ngSwitchCase="3">
+                <P>{{data.name.NatHis.about}}</P>
+                <ol>
+                        <li *ngFor="let clas of data.name.NatHis.classification">
+                                {{clas}}
+                                <span>{{clas}}</span> {{clas[key]}}
+                        </li>
+                </ol>
+        </div>
+        <div *ngSwitchCase="4">
+                <P>{{data.name.medicine.about }}</P>
+                <ol>
+                        <li *ngFor="let clas of data.name.medicine.classification ">
+                                {{clas}}
+                                <span>{{clas}}</span> {{clas[key]}}
+                        </li>
+                </ol>
+        </div>
+</div>
