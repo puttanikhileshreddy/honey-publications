@@ -26,6 +26,8 @@ import { GuidelinesStyle1Component } from './guidelines/guidelines-style1/guidel
 import { JourStyle1Component } from './journals/jour-style1/jour-style1.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +58,8 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     MatButtonModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

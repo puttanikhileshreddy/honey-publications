@@ -1,85 +1,35 @@
-<!-- <div class="container-fluid p-0">
-  <div class=" mat-elevation-z8 row m-0 p-1 ">
-    <div class="col-md-auto col-sm-12 text-sm-center row ">
-      <img src="/assets/logo.png" alt="logo" width="45px" class="float-md-left mr-2 ml-auto"
-        style="padding: 2px;background-color: white;border-radius: 50px;" />
-      <h3 class="text-dark-light mb-0 float-md-left mr-auto h-cr" routerLink="/about" style="line-height: 45px;">Honey
-        Publications</h3> 
-      
-    </div>
-    
-    <div class="col p-0">
-      <div class="row m-0"> -->
-        <!-- <nav class="mx-auto  " style="display: inline-block;">
-          <div class="col-md-auto col-sm-12 text-sm-center row ">
-            <img src="/assets/logo.png" alt="logo" width="45px" class="float-md-left mr-2 ml-auto"
-              style="padding: 2px;background-color: white;border-radius: 50px;" />
-            <h3 class="text-dark-light mb-0 float-md-left mr-auto h-cr" routerLink="/about" style="line-height: 45px;">Honey
-              Publications</h3> 
-            
-          </div>
-          <ul>
-            <li><a routerLink="/">Guidelines</a>
-              <ul style="width: 100px;">
-                <li><a routerLink="/author">Author's</a></li>
-                <li><a routerLink="/editor">Editors</a></li>
-                <li><a routerLink="/reviwer">Reviewers</a></li>
-                <li><a routerLink="/privacy-polocy">Privacy Polocy</a></li>
-              </ul>
-            </li>
-            <li><a routerLink="/">Journals</a>
-              <ul>
-                <li><a routerLink="/jrn-engineering">Engineering</a></li>
-                <li><a routerLink="/jrn-poetry">Poetry</a></li>
-                <li><a routerLink="/jrn-medicine">Medicine</a></li>
-                <li><a routerLink="/jrn-naturalHistory">Natural History</a></li>
-              </ul>
-            </li>
-            <li><a routerLink="/contactUs">Contact Us</a></li>
-          </ul>
-        </nav> -->
-      <!-- </div>
-    </div>
 
-  </div>
-</div> -->
-
-<!-- 
-
-<nav class="navbar fixed-bottom navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Fixed bottom</a>
-</nav> -->
-
-
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light " (scroll)="onWindowScroll()">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light ">
   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button> -->
-  <h3 class="text-dark-light mb-0 float-md-left mr-auto h-cr" routerLink="/about" style="line-height: 45px;">Honey
-    Publications</h3> 
-  <div>   
-      <ul>
-        <li><a routerLink="/">Guidelines</a>
-          <ul style="width: 100px;">
-            <li><a routerLink="/author">Author's</a></li>
-            <li><a routerLink="/editor">Editors</a></li>
-            <li><a routerLink="/reviwer">Reviewers</a></li>
-            <li><a routerLink="/privacy-polocy">Privacy Polocy</a></li>
-          </ul>
-        </li>
-        <li><a routerLink="/journals">Journals</a>
-          <!-- <ul>
-            <li><a routerLink="/jrn-engineering">Engineering</a></li>
-            <li><a routerLink="/jrn-poetry">Poetry</a></li>
-            <li><a routerLink="/jrn-medicine">Medicine</a></li>
-            <li><a routerLink="/jrn-naturalHistory">Natural History</a></li>
-          </ul> -->
-        </li>
-        <li><a routerLink="/contactUs">Contact Us</a></li>
-      </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
+  <h2 class="text-dark-light mb-0 float-md-left mr-auto h-cr" routerLink="/about"
+    style="line-height: 45px;color:rgba(2, 4, 119, 0.897);">Honey
+    Publications</h2>
+  <div>
+    <ul>
+     <li>
+      <a mat-button [matMenuTriggerFor]="animals">Guidelines</a>
+
+      <mat-menu #animals="matMenu">
+        <button mat-menu-item routerLink="/author" [matMenuTriggerFor]="author">Author's</button>
+        <button mat-menu-item routerLink="/editor">Editors</button>
+        <button mat-menu-item routerLink="/reviwer">Reviewers</button>
+        <button mat-menu-item routerLink="/privacy-polocy">Privacy Polocy</button>
+      </mat-menu>
+
+      <mat-menu #author="matMenu">
+        <button mat-menu-item >For authors</button>
+        <button mat-menu-item >Manuscript Guidelines</button>
+        <button mat-menu-item >Peer review process</button>
+        <button mat-menu-item>Processing fees</button>
+      </mat-menu>
+
+   
+     </li>
+      <li><a  mat-button  routerLink="/journals">Journals</a>
+      </li>
+      <li><a  mat-button  routerLink="/contactUs">Contact Us</a></li>
+    </ul>
   </div>
 </nav>

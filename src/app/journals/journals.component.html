@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="mt-5 col-md-12 card rounded ">
+<div class="">
+    <div class="mt-5  col-md-12 col-sm-6 col-md-4 card rounded ">
         <div>
             <h2>Journals</h2>
             <p>
@@ -12,14 +12,14 @@
                 respective language.
             </p>
         </div>
-        <div class="row">
+        <div class="row m-0 ">
             <mat-card class="example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image"></div>
                     <mat-card-title> Journal of Engineering</mat-card-title>
                     <mat-card-subtitle>JOE</mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image src="/assets/engineering.jpg" alt="Photo of a Shiba Inu">
+                <img style="height: 200px;" mat-card-image src="/assets/engineering.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <p>
                         Honey Publications welcome the students, professors, scholars with any engineering background to
@@ -34,19 +34,53 @@
                         review, mini review, case reports, short communications, opinions, perceptions and so on.
                     </p>
                 </mat-card-content>
-                <mat-card-actions>
-                        <button mat-button (click)="openDialog()">View</button>
+                <mat-card-actions class="text-right">
+                    <!-- <button class="btn btn-primary" mat-button (click)="openDialog(1)">View</button> -->
                     <!-- <button mat-button>SHARE</button> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#engineering">
+                       Details
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade text-dark bg-dark-t" id="engineering" tabindex="-1" role="dialog"
+                        aria-labelledby="engineering" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title Text Dark" id="engineeringLabel">Engineering</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-dark text-left">
+                                   <p>
+                                        {{json.default.Journalsdata.engineering.about}}
+                                   </p>                                
+                                   <ol style="overflow: scroll;  list-style-type: number">
+                                        <li *ngFor="let clas of json.default.Journalsdata.engineering.classification">
+                                          
+                                                <span>{{clas}}</span> {{clas[key]}}
+                                        </li>
+                                </ol>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </mat-card-actions>
             </mat-card>
 
-            <mat-card class=" ml-4 example-card">
+            <mat-card class=" example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image-poetry"></div>
                     <mat-card-title> Journal of Poetry</mat-card-title>
                     <mat-card-subtitle>JOP</mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image src="/assets/poetry.jpg" alt="Photo of a Shiba Inu">
+                <img style="height: 200px;" mat-card-image src="/assets/poetry.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <p>
                         Honey Publications welcome the students, professors, scholars with any engineering background
@@ -58,19 +92,53 @@
                         opinions, perceptions and so on.
                     </p>
                 </mat-card-content>
-                <mat-card-actions>
-                        <button mat-button (click)="openDialog()">View</button>
+                <mat-card-actions class="text-right">
+                    <!-- <button class="btn btn-primary" mat-button (click)="openDialog(2)">View</button> -->
                     <!-- <button mat-button>SHARE</button> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#poetry">
+                            Details
+                         </button>
+     
+                         <!-- Modal -->
+                         <div class="modal fade text-dark bg-dark-t" id="poetry" tabindex="-1" role="dialog"
+                             aria-labelledby="poetry" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered" role="document">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title Text Dark" id="poetryLabel">Poetry</h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                         </button>
+                                     </div>
+                                     <div class="modal-body text-dark text-left">
+                                        <p>
+                                             {{json.default.Journalsdata.poetry.about}}
+                                        </p>                                
+                                        <ol style="overflow: scroll;  list-style-type: number">
+                                             <li *ngFor="let clas of json.default.Journalsdata.poetry.classification">
+                                               
+                                                     <span>{{clas}}</span> {{clas[key]}}
+                                             </li>
+                                     </ol>
+     
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
                 </mat-card-actions>
             </mat-card>
 
-            <mat-card class=" ml-4 example-card">
+            <mat-card class=" example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image-nature"></div>
                     <mat-card-title> Journal of Natural History</mat-card-title>
                     <mat-card-subtitle>JONH</mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image src="/assets/nature.jpg" alt="Photo of a Shiba Inu">
+                <img style="height: 200px;" mat-card-image src="/assets/nature.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <p>
                         Modern generation have changed the days and lives from being explored to nature to prisoning
@@ -80,19 +148,53 @@
                         readers show interest in natural history.
                     </p>
                 </mat-card-content>
-                <mat-card-actions>
-                        <button mat-button (click)="openDialog()">View</button>
+                <mat-card-actions class="text-right">
+                    <!-- <button class="btn btn-primary" mat-button (click)="openDialog(3)">View</button> -->
                     <!-- <button mat-button>SHARE</button> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NatHis">
+                            Details
+                         </button>
+     
+                         <!-- Modal -->
+                         <div class="modal fade text-dark bg-dark-t" id="NatHis" tabindex="-1" role="dialog"
+                             aria-labelledby="NatHis" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered" role="document">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title Text Dark" id="NatHisLabel">Natural History</h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                         </button>
+                                     </div>
+                                     <div class="modal-body text-dark text-left">
+                                        <p>
+                                             {{json.default.Journalsdata.NatHis.about}}
+                                        </p>                                
+                                        <ol style="overflow: scroll;  list-style-type: number">
+                                             <li *ngFor="let clas of json.default.Journalsdata.NatHis.classification">
+                                               
+                                                     <span>{{clas}}</span> {{clas[key]}}
+                                             </li>
+                                     </ol>
+     
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
                 </mat-card-actions>
             </mat-card>
 
-            <mat-card class="mt-3 example-card">
+            <mat-card class=" example-card">
                 <mat-card-header>
                     <div mat-card-avatar class="example-header-image-medicine"></div>
                     <mat-card-title> Journal of Medicine </mat-card-title>
                     <mat-card-subtitle>JOM</mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image src="/assets/medicine.jpg" alt="Photo of a Shiba Inu">
+                <img style="height: 200px;" mat-card-image src="/assets/medicine.jpg" alt="Photo of a Shiba Inu">
                 <mat-card-content>
                     <p>
                         Journal of Medical Science is an open access journal which is inhabited with all the medical
@@ -102,13 +204,45 @@
                         related to any medical specialization.
                     </p>
                 </mat-card-content>
-                <mat-card-actions>
-                    <button mat-button (click)="openDialog()">View</button>
-                    <!-- <button mat-button>SHARE</button> -->
+                <mat-card-actions class="text-right">
+                    <!-- <button class="btn btn-primary" mat-button (click)="openDialog(4)">View</button> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#medicine">
+                            Details
+                         </button>
+     
+                         <!-- Modal -->
+                         <div class="modal fade text-dark bg-dark-t" id="medicine" tabindex="-1" role="dialog"
+                             aria-labelledby="medicine" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered" role="document">
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h5 class="modal-title Text Dark" id="medicineLabel">Engineering</h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true">&times;</span>
+                                         </button>
+                                     </div>
+                                     <div class="modal-body text-dark text-left">
+                                        <p>
+                                             {{json.default.Journalsdata.medicine.about}}
+                                        </p>                                
+                                        <ol style="overflow: scroll;  list-style-type: number">
+                                             <li *ngFor="let clas of json.default.Journalsdata.medicine.classification">
+                                               
+                                                     <span>{{clas}}</span> {{clas[key]}}
+                                             </li>
+                                     </ol>
+     
+                                     </div>
+                                     <div class="modal-footer">
+                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
                 </mat-card-actions>
             </mat-card>
-
-
 
 
         </div>
