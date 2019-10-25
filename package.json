@@ -1,5 +1,8 @@
 {
   "name": "honey-publications",
+  "Developers":{
+    "1":"Nikhilesh Reddy Putta" 
+  },
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
