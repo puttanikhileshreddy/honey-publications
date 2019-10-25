@@ -1,0 +1,19 @@
+/* active tab */
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    // color:red;
+    background-color: rgb(81, 83, 81);
+    border:black;
+    }
+    
+    /* ink bar */
+    ::ng-deep .mat-ink-bar {
+    background-color: var(--primary-color,#1F89CE) !important;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .card{
+        background-color: rgba(255, 255, 255, 0.658);
+    } 

@@ -4,6 +4,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { GuidelinesComponent } from './guidelines/guidelines.component';
 import { AuthorComponent } from './guidelines/author/author.component';
+import { ManuscriptGuidelinesComponent } from './guidelines/author/manuscript-guidelines/manuscript-guidelines.component';
+import { PeerReviewProcessComponent } from './guidelines/author/peer-review-process/peer-review-process.component';
+import { ProcessingFeesComponent } from './guidelines/author/processing-fees/processing-fees.component';
 import { EditorComponent } from './guidelines/editor/editor.component';
 // import { GuideStyleComponent } from './guidelines/guide-style/guide-style.component';
 import { PrivacyPolocyComponent } from './guidelines/privacy-polocy/privacy-polocy.component';
@@ -31,6 +34,9 @@ const routes: Routes = [
   {path: 'jrn-medicine',component: MedicineComponent },
   {path: 'jrn-naturalHistory',component: NatHisComponent },
   {path: 'jrn-poetry',component: PoetryComponent },
+  {path: 'manuScript-guidelines',component: ManuscriptGuidelinesComponent },
+  {path: 'Peer-Review-Process',component: PeerReviewProcessComponent },
+  {path: 'Processing-Fees',component: ProcessingFeesComponent },
 
 ];
 

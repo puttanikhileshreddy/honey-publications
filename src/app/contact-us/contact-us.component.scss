@@ -1,6 +1,4 @@
-.bg-cont{
-    background: linear-gradient(rgba(17, 17, 17, 0.6), rgba(36, 35, 35, 0.4));
-}
+
 .example-form {
     min-width: 150px;
     max-width: 500px;
@@ -10,3 +8,18 @@
   .example-full-width {
     width: 100%;
   }
+
+  ::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+       color: black;
+    }
+    mat-form-field {
+       .mat-hint, input, ::placeholder, .mat-form-field-label {
+          color:black;
+       }
+    }
+ }
+
+  .card{
+    background-color: rgba(255, 255, 255, 0.658);
+} 

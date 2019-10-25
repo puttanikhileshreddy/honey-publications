@@ -27,7 +27,11 @@ import { JourStyle1Component } from './journals/jour-style1/jour-style1.componen
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
-
+import {MatIconModule} from '@angular/material/icon';
+import { ManuscriptGuidelinesComponent } from './guidelines/author/manuscript-guidelines/manuscript-guidelines.component';
+import { PeerReviewProcessComponent } from './guidelines/author/peer-review-process/peer-review-process.component';
+import { ProcessingFeesComponent } from './guidelines/author/processing-fees/processing-fees.component';
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +52,10 @@ import {MatMenuModule} from '@angular/material/menu';
     NatHisComponent,
     GuidelinesStyle1Component,
     JourStyle1Component,
-    DialogOverviewExampleDialog 
+    DialogOverviewExampleDialog,
+    ManuscriptGuidelinesComponent,
+    PeerReviewProcessComponent,
+    ProcessingFeesComponent 
   ],
   entryComponents: [DialogOverviewExampleDialog],
   imports: [
@@ -59,7 +66,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatDialogModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
